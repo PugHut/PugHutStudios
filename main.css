@@ -9,7 +9,9 @@ header {
     padding: 10px;
     padding-bottom: 0px;
     text-align: center;
-    background-color: lightblue;
+    background-image: url("https://dk2dv4ezy246u.cloudfront.net/widgets/sMO9oTk7iJK_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -18,11 +20,32 @@ body {
     font-family: "Comic Sans MS", "Comic Sans";
     margin: 0;
     padding: 0;
-    background-image: url("https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalgic_Windows_Wallpaper_4k.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("https://64.media.tumblr.com/fd9dea9bd9c3d403dff1ac61caca1091/tumblr_orpi2cL3QU1wpzpibo1_400.gifv");
+    background-repeat: repeat;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 2px;
     text-align: center;
     
+}
+p {
+    font-size: 40px;
+    background-color: white;
+}
+
+h1 {
+    background-color: white;
+}
+
+h2 {
+    background-color: white;
+}
+
+h3 {
+    background-color: white;
+}
+
+a {
+    background-color: white;
 }
 
 ul {
