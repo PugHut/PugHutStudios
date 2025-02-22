@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: sanscomic;
+    src: url(Comic\ Sans\ MS.ttf);
+  }
+
+header {
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-image: url("pics/header.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+body {
+    font-family: "sanscomic";
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-repeat: repeat;
+    -webkit-text-fill-color: white;
+    text-align: center;
+    
+}
+p {
+    font-size: 40px;
+    background-image: url("pics/text.gif");
+    padding: 1px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    background-image: url("pics/text.gif");
+    padding: 1px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    background-image: url("pics/text.gif");
+    padding: 1px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
+
+h3 {
+    
+    background-image: url("pics/text.gif");
+    padding: 1px;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    background-image: url("pics/text.gif");
+    color: white;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; 
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ffdafa;
+}
+
+.mainshit {
+    background-image: url("pics/bg.gif");
+    padding: 250px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: auto;
+}
