@@ -3,23 +3,19 @@ body, html {
     padding: 0;
 }
 
-@font-face {
-    font-family: sanscomic;
-    src: url(Comic\ Sans\ MS.ttf);
-  }
 
 header {
     padding: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-image: url("pics/header.gif");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
 body {
-    font-family: "sanscomic";
+    font-family: "Arial, Helvetica, sans-serif";
     margin: 0;
     padding: 0;
     background-color: black;
@@ -39,14 +35,6 @@ p {
 
 h1 {
     font-size: 50px;
-    background-image: url("pics/text.gif");
-    padding: 1px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: auto;
-}
-
-h2 {
     background-image: url("pics/text.gif");
     padding: 1px;
     box-sizing: border-box;
@@ -90,9 +78,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #ffdafa;
-}
 
 .mainshit {
     background-image: url("pics/bg.gif");

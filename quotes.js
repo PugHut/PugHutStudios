@@ -38,7 +38,7 @@ async function fetchQuotes() {
         document.getElementById("quote").innerText = "please dm me QOUTES ARENT FREAKING WORKING.";
     }
 }
-
+console.warn("get your femboy twink ass out of the console and the source code");
 // Load a quote on page load
 fetchQuotes();
-// Chatgpt doesn't understand simple requests... It was supposed to refresh daily, not every refresh!
+// Chatgpt doesn't understand simple requests... 
