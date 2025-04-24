@@ -1,0 +1,93 @@
+body {
+    font: 800 40px comic;
+    color: white;
+    background-color: rgb(71, 71, 71);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.3px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    background-image: url("Images/kilometer.jpg");
+  background-size: cover;       /* make it stretch to cover the whole bitch */
+  background-position: center;  /* make it look centered and pretty */
+  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+@font-face {
+    font-family: comic;
+    src: url(Comic\ Sans\ MS.ttf);
+  }
+
+  .side-img {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    opacity: 0.5; /* optional aesthetic shit */
+  }
+
+  .left-img {
+    left: 0;
+  }
+
+  .right-img {
+    right: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0 auto; /* this is the magic centering shit */
+    padding: 0;
+    width: 1000px;
+  }
+  
+  .active {
+    background-image: url("Images/trans.png");
+  background-size: cover;       /* make it stretch to cover the whole bitch */
+  background-position: center;  /* make it look centered and pretty */
+  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
+  color: white;
+  background-size: 100% 100%;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-image: url("Images/graypanquestioning.png");
+  background-size: cover;       /* make it stretch to cover the whole bitch */
+  background-position: center;  /* make it look centered and pretty */
+  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
+  color: white;
+  background-size: 100% 100%;
+  }

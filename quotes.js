@@ -35,10 +35,10 @@ async function fetchQuotes() {
         }
     } catch (error) {
         console.error("Error fetching quotes:", error);
-        document.getElementById("quote").innerText = "please dm me QOUTES ARENT FREAKING WORKING.";
+        document.getElementById("quote").innerText = "this isn't a quote... the system is broken";
     }
 }
-console.warn("get your femboy twink ass out of the console and the source code");
+console.warn("get out of the damn source code");
 // Load a quote on page load
 fetchQuotes();
 // Chatgpt doesn't understand simple requests... 

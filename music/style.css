@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: comic;
+}
+
+@font-face {
+    font-family: comic;
+    src: url(../Comic\ Sans\ MS.ttf);
+  }
