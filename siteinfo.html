@@ -2,6 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <title>PugHutStudios Site Info</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
@@ -29,14 +31,17 @@
   <h2>Rat Paste:</h2>
   <p>Mr. Pug - Bass, Guitar, misc, Producer</p>
   <p>RowRow - Drums</p>
-  <p>Arthur - Guitar, Brass</p>
-  <p>Debra - Vocals</p>
 
 
-</div>
-
-<div align='center'><a href='https://www.free-website-hit-counter.com'>
-<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=8442&s=1' border='0' alt='Free Website Hit Counter'></a><br />
+<h1>NOW LISTENING TO:</h1>
+<div class="nowplayingcard">
+    <div class="nowplayingcontainer-inner">
+        <img id="trackart" src="#">
+        <div class="trackInfo">
+            <a id="tracktitle"></a>
+            <a href="#" id="trackartist"></a>
+        </div>
+    </div>
 </div>
 
 <img src="Images/left.png" class="side-img left-img" alt="Mr. Pug on the left">
@@ -45,4 +50,6 @@
 
 </body>
 <script src="quotes.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="lastfm.js"></script>
 </html> 
