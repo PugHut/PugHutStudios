@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <title>Pug Hut Studios</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+<header>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../music.html">Music</a></li>
+    <li><a href="news.html" class="active">News</a></li>
+    <li><a href="../siteinfo.html">Site Info</a></li>
+  </ul>
+</header>
+
+<div class="page-bg">
+<div class="panel">
+    <div id="post"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+fetch("news.json")
+.then(res => res.json())
+.then(posts => {
+
+  const post = posts.find(p => p.id === id);
+
+  document.getElementById("post").innerHTML = `
+    <h1>${post.title}</h1>
+    <p>${post.date}</p>
+    <div>${post.content.replace(/\n/g, "<br>")}</div>
+  `;
+});
+</script>
+</div>
+
+</div>
+
+</body>
+<script src="../quotes.js"></script>
+<script src="../jquery-3.6.0.min.js"></script>
+<script src="../lastfm.js"></script>
+</html> 

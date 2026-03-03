@@ -9,8 +9,8 @@
 
 <header>
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="music.html" class="active">Music</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="music.html">Music</a></li>
     <li><a href="news/news.html">News</a></li>
     <li><a href="siteinfo.html">Site Info</a></li>
   </ul>
@@ -18,13 +18,11 @@
 
 <div class="page-bg">
 <div class="panel">
-<h1>Music</h1>
+<h1>Title</h1>
 </div>
 
 <div class="panel">
-<a href="music/solo.html">Solo Music</a>
-</br>
-<a href="RatPaste/index.html">Rat Paste</a>
+
 </div>
 
 </div>

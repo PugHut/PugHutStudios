@@ -7,65 +7,43 @@
 </head>
 <body>
 
-
-
-<div class="content">
-<h1>Pug Hut Studios</h1>
-<p>this time it's actually (somewhat) bearable to look at<p>
-<h3>Qoute of the current page instance:</h3>
-<p class="quote" id="quote"></p>
-
-<br>
-
-<ul>
-    <li class="active"><a href="index.html">Home</a></li>
+<header>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
     <li><a href="music.html">Music</a></li>
-    <li><a href="about.html">About</a></li>
+    <li><a href="news/news.html">News</a></li>
     <li><a href="siteinfo.html">Site Info</a></li>
   </ul>
+</header>
 
-  <br>
-
-  <h2>The best website of all time<a href="https://pughutstudios-e0fbb.firebaseapp.com/">!</a></h2>
-  </br>
-  </br>
-  </br>
-  </br>
-  <h1>News for 8/19/25:</h1>
-  </br>
-  <h2>Rat paste</h2>
-  <p>Arthur, and Bennett are no longer a part of Rat paste. Tbh they werent doing much and-if anything-pausing progress.</p>
-  <p>Rowan and I have already started... well, practicing. Don't expect anything TOO substantial at the moment cuz we JUST started playing together</p>
-  </br>
-  </br>
-
-  <h2>Site update</h2>
-  <p>Nothing too major, just a few additions</p>
-  <h3>Changes:</h3>
-  <p>Added now listening to widget</p>
-  <p>Updated info about Rat Paste</p>
-  <p>Updated solo music sub-page</p>
-  <p>Added news</p>
-  <p>Quality of life improvements</p>
-  <p>Removed Herobrine</p>
-  </br>
-  <p>It's getting harder to maintain this site, I may swap back to google sites or another builder eventually.</p>
-  </br>
-  </br>
-
-  <h2>Life updates</h2>
-  <p>Unfortunately, school's starting up soon. Any *major* music... things... will take WAY longer</p>
-  <p>I'm sorta getting better at drumming</p>
-  </br>
-  </br>
-  <p>Anyways, that's it for news.</p>
-
-  </br>
-  </br>
-  </br>
-  </br>
+<div class="page-bg">
+<div class="panel">
+<h1>Pug Hut Studios</h1>
 </div>
 
+<div class="panel">
+<h1>Today's quote:</h3>
+<p class="quote" id="quote"></p>
+</div>
+
+<div class="panel">
+<h1>NEWSLETTER SIGN UP</h1>
+<a href="https://buttondown.com/refer/pug_hut_studios" target="_blank">
+    Powered by Buttondown.
+  </a>
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/pug_hut_studios"
+  method="post"
+  class="embeddable-buttondown-form"
+  referrerpolicy="unsafe-url"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+</form>
+</div>
+
+<div class="panel">
 <h1>NOW LISTENING TO:</h1>
 <div class="nowplayingcard">
     <div class="nowplayingcontainer-inner">
@@ -76,10 +54,8 @@
         </div>
     </div>
 </div>
-
-<img src="Images/left.png" class="side-img left-img" alt="Mr. Pug on the left">
-<img src="Images/right.png" class="side-img right-img" alt="Mr. Pug on the right">
-
+</div>
+</div>
 
 </body>
 <script src="quotes.js"></script>

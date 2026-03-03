@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles.css">
+  <title>Pug Hut Studios</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../music.html">Music</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="../siteinfo.html">Site Info</a></li>
+          </ul>
+        </header>
+
+
+    <div class="page-bg">
+
+
+<div id="news-container"></div>
+
+<script>
+fetch("news.json")
+.then(res => res.json())
+.then(posts => {
+
+  const container = document.getElementById("news-container");
+
+  posts.reverse().forEach(post => {
+    container.innerHTML += `
+      <a href="post.html?id=${post.id}" class="news-card">
+        <img src="${post.thumbnail}">
+        <h2>${post.title}</h2>
+        <p>${post.date}</p>
+      </a>
+    `;
+  });
+
+});
+</script>
+</div>
+
+
+</body>
+</html> 

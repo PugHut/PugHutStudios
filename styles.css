@@ -1,175 +1,210 @@
-
-
 body {
-      font: 800 40px comic;
-    font: 800 40px comic;
-    color: white;
-    
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1.3px;
-    -webkit-text-stroke-color: black;
-    text-align: center;
-    background-image: url("Images/kilometer.jpg");
-  
-  background-size: cover;       /* make it stretch to cover the whole bitch */
-  background-position: center;  /* make it look centered and pretty */
-  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
-  background-attachment: fixed;
-  background-size: 100% 100%;
+  font: 800 40px comic;
+  color: white;
+
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1.3px black;
+  text-align: center;
+
+  background-color: #000;
+  margin: 0;
+}
+
+.page-bg {
+  min-height: calc(100vh - 100px);
+  background-image: url("Images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
 
 .nowplayingcard {
-    width: 20%;
-    margin: 0 auto;
-    margin-top: 3%;
-    font-family: $globalFontFamily;
-    font-size: $globalFontSize;
+width: 40%;
+margin: 0 auto;
+margin-top: 3%;
 
-    .nowplayingcontainer-inner {
-      width: 100%;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      transition: 0.3s;
-      display: inline-block;
-      @include border-left-radius($globalBorderRadius);
+.nowplayingcontainer-inner {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: inline-block;
+  @include border-left-radius($globalBorderRadius);
 
-      &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      }
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
 
-      img#trackart {
-        max-width: 30%;
-        float: left;
-        left: 0;
-        @include border-left-radius($globalBorderRadius);
-      }
+  img#trackart {
+    max-width: 30%;
+    float: left;
+    left: 0;
+    @include border-left-radius($globalBorderRadius);
+  }
 
-      .trackInfo {
-        width: 70%;
-        float: left;
-        display: block;
-
-        a {
-          max-width: 90%;
-          display: block;
-          font-size: 30px;
-          text-align: center;
-          text-decoration: none;
+  .trackInfo {
+    width: 70%;
+    float: left;
+    display: block;
+  
+    a {
+      max-width: 90%;
+      display: block;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      white-space: nowrap;
+  
+      overflow-x: auto;
+      overflow-y: hidden;
+  
+      &:nth-child(odd) {
+        color: white;
+        font-weight: bold;
+        line-height: 15px;
+        letter-spacing: 0.2px;
+        padding: 10% 0 0 5%;
+  
+        img {
+          width: 15px;
+          height: 15px;
           vertical-align: middle;
-          overflow: auto;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-
-          &:nth-child(odd) {
-            img {
-              width: 15px;
-              height: 15px;
-              vertical-align: middle;
-              margin: -2% 3px 0 0;
-            }
-
-            color: white;
-            font-weight: bold;
-            vertical-align: middle;
-            line-height: 15px;
-            letter-spacing: 0.2px;
-            padding: 10% 0 0 5%;
-          }
-
-          &:nth-child(even) {
-            img {
-              width: 15px;
-              height: 15px;
-              vertical-align: middle;
-              margin: -2% 3px 0 0;
-            }
-
-            color: gray;
-            font-size: $globalFontSize - 1px;
-            letter-spacing: 0.1px;
-            padding: 5% 0 0 5%;
-          }
+          margin: -2% 3px 0 0;
+        }
+      }
+  
+      &:nth-child(even) {
+        color: gray;
+        font-size: $globalFontSize - 1px;
+        letter-spacing: 0.1px;
+        padding: 5% 0 0 5%;
+  
+        img {
+          width: 15px;
+          height: 15px;
+          vertical-align: middle;
+          margin: -2% 3px 0 0;
         }
       }
     }
   }
   
-
-  
+}
 }
 
+
+
+
+
 a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+}
+
 
 .content {
-    position: relative;
-    z-index: 2;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
+position: relative;
+z-index: 2;
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
 
 @font-face {
-    font-family: comic;
-    src: url(Comic\ Sans\ MS.ttf);
-  }
+font-family: comic;
+src: url(Comic\ Sans\ MS.ttf);
+}
 
-  .side-img {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: auto;
-    z-index: 1;
-    opacity: 0.5; /* optional aesthetic shit */
-  }
 
-  .left-img {
-    left: 0;
-  }
+ul {
+  list-style-type: none;
+  margin: 0 auto 10px auto;
+  padding: 0;
+  width: 1000px;
+}
 
-  .right-img {
-    right: 0;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0 auto; /* this is the magic centering shit */
-    padding: 0;
-    width: 1000px;
-  }
+li {
+  margin-bottom: 6px;
   
-  .active {
-    background-image: url("Images/trans.png");
-  background-size: cover;       /* make it stretch to cover the whole bitch */
-  background-position: center;  /* make it look centered and pretty */
-  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
-  color: white;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+
+  background-image: url("Images/Button.png");
   background-size: 100% 100%;
-  }
-  
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color on hover */
-  li a:hover {
-    background-image: url("Images/graypanquestioning.png");
-  background-size: cover;       /* make it stretch to cover the whole bitch */
-  background-position: center;  /* make it look centered and pretty */
-  background-repeat: no-repeat; /* don’t tile that shit unless you’re making a 2004 glitter gif website */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+}
+
+li a:hover,
+li a.active {
+  background-image: url("Images/PButton.png");
   color: white;
+}
+
+
+#news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.panel {
+  background-image: url("Images/Panel.png");
+  border-radius: 25px;
   background-size: 100% 100%;
-  }
+  background-repeat: no-repeat;
+
+  margin: 10px auto;
+  padding: 2%;
+
+  max-width: 1100px;
+}
+
+.news-card {
+  text-decoration: none;
+  color: inherit;
+  background: #111;
+
+  background-image: url("Images/Panel.png");
+  border-radius: 25px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: fill;
+  display: block;
+}
