@@ -8,11 +8,14 @@ body {
 
   background-color: #000;
   margin: 0;
+  margin-left: 250px; /* Must equal or exceed the width of the sidebar */
+
+
 }
 
 .page-bg {
   min-height: calc(100vh - 100px);
-  background-image: url("Images/bg.png");
+  background-image: url(Images/bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -133,10 +136,15 @@ src: url(Comic\ Sans\ MS.ttf);
 
 
 ul {
-  list-style-type: none;
-  margin: 0 auto 10px auto;
-  padding: 0;
-  width: 1000px;
+  position: fixed;   /* Locks the bar to the screen viewport */
+  top: 0;            /* Aligns it to the top edge */
+  left: 0;           /* Positions it on the left side */
+  width: 250px;      /* Sets a defined width */
+  height: 100vh;     /* Spans the full height of the viewport */
+  background-color: #000000; /* Example background color */
+  overflow-x: hidden; /* Disables horizontal scrollbars */
+  padding-top: 20px; /* Optional spacing inside the bar */
+
 }
 
 li {
@@ -150,7 +158,7 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 
-  background-image: url("Images/Button.png");
+  background-image: url("Images/2Button.png");
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -159,7 +167,7 @@ li a {
 
 li a:hover,
 li a.active {
-  background-image: url("Images/PButton.png");
+  background-image: url("Images/2pButton.png");
   color: white;
 }
 
